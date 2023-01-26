@@ -48,4 +48,4 @@ while True:
                 refuse_anther_game = True
                 break
     break
-# proverka
+# proverka на
