@@ -1,5 +1,6 @@
 import random
 refuse_anther_game = False
+test_variable = 0
 
 while True:
     score = 0
