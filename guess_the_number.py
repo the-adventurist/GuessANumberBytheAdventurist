@@ -1,7 +1,7 @@
 import random
 refuse_anther_game = False
 test_variable = 0
-
+valid = False
 while True:
     score = 0
     level = 1
@@ -48,14 +48,13 @@ while True:
         print('Game over!')
         print(f'Your final score is: {score}')
         print('You need more practice!')
-        while input() != 'Y' or 'N':
-            if input('Do you wanna another game?(Y/N)').upper() == 'Y':
-                break
+        print('Do you wanna another game?(Y/N): ')
+        player_choice = input()
 
-            elif input('Do you wanna another game?(Y/N)').upper() == 'N':
-                refuse_anther_game = True
-                break
-        if refuse_anther_game:
-            break
-    if refuse_anther_game:
-        break
+        if player_choice.upper() == 'Y':
+            continue
+        elif player_choice.upper() == 'N':
+            exit()
+        else:
+            print('Invalid input. You are OUT...')
+            exit()
